@@ -12,9 +12,9 @@
 -- Description : A Linear Feedback shift register, is shift register whose input
 --             : bit is the output of a lenear function of two or more of it's 
 --             : previous states (taps/polynomial).
---             : 
---             : 
---             : 
+--             : The LFSR create a random count, depending on the fb taps 
+--             : determines the length before the count repeates. As per any
+--             : counter the max count before loopback is 2^n
 --~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 library ieee;
 use ieee.std_logic_1164.all;
